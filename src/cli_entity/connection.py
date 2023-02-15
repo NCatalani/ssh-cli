@@ -8,6 +8,7 @@ class Connection(CLIEntity):
         super().__init__(
             name=name,
             category=CLICategory.CONNECTION,
+            value={}
         )
 
         self.username = username
@@ -71,7 +72,7 @@ class Connection(CLIEntity):
 
         return command
 
-    def exec_login(self) -> None:
+    def login(self) -> None:
 
         cmd = self.__generate_login_command()
 

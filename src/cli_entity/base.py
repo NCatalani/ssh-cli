@@ -42,7 +42,7 @@ class CLIEntity(object):
 
     @value.setter
     def value(self, value=None):
-        self.__value = value or {}
+        self.__value = value
 
     def __init__(self, name, category, value=None):
         self.name = name
